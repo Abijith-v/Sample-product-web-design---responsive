@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;600&display=swap");
+:root {
+  --primary-color: #007AF3;
+}
+
+body {
+  background: #FFF;
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 1.2em;
+}
+
+.navBar {
+  background: var(--primary-color);
+  padding: 1em;
+}
+
+.navBar .logo {
+  margin: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 1.2em;
+}
+
+.navBar .logo span {
+  color: black;
+}
+
+.navBar nav {
+  display: none;
+}
+
+.navBar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navBar .menuOpenButtonInNav {
+  cursor: pointer;
+  width: 10%;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero .mainHeadingInHero {
+  font-size: 3em;
+  letter-spacing: 0.0em;
+  line-height: 1.3em;
+  font-weight: bold;
+}
+
+.hero .subHeadingInHero {
+  font-size: 1.5em;
+}
+
+.hero .subHeadingInHero span {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.hero .buttonsInHero {
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+}
+
+.hero .buttonsInHero .Button1ForHero1 {
+  background: var(--primary-color);
+  color: #FFF;
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+  border-radius: 6em;
+  font-weight: bold;
+}
+
+.hero img {
+  margin: 2em 0.5em 2em 0.5em;
+  width: 80%;
+}
+
+.featuresSection {
+  background: var(--primary-color);
+}
+
+.featuresSection .container {
+  text-align: center;
+  padding-bottom: 1.5em;
+  color: white;
+}
+
+.featuresSection .container li {
+  margin-left: 2em;
+  font-weight: bold;
+  color: white;
+  line-height: 3em;
+  position: relative;
+}
+
+.featuresSection .container li:before {
+  left: 0em;
+  top: 1em;
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/check.png");
+  background-size: contain;
+}
+
+.featuresSection .container img {
+  display: none;
+}
+
+.testimonials {
+  margin-bottom: -1em;
+}
+
+.testimonials .container {
+  text-align: center;
+}
+
+.testimonials .container li {
+  line-height: 1em;
+  margin: 6em 1em 5em 1em;
+  background: #ece7e7;
+  border-radius: 0.5em;
+  text-shadow: 5em solid black;
+  padding: 1.5em;
+}
+
+.testimonials .container li img {
+  margin-top: -5em;
+  width: 5em;
+  height: 5em;
+  border: 0.3em solid #d6d3d3;
+  border-radius: 20em;
+}
+
+.testimonials .container li p {
+  font-weight: bold;
+  font-size: 100%;
+}
+
+.testimonials .container li cite {
+  font-size: 0.9em;
+}
+
+.contactSection {
+  background: var(--primary-color);
+  color: white;
+  padding: 1em 0.5em 2em 0.5em;
+}
+
+.contactSection .container {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.contactSection .contactHeading {
+  text-align: center;
+}
+
+.contactSection label {
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+
+.contactSection input, .contactSection textarea {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 2.3em;
+  padding: 1em;
+  border: none;
+  border-radius: 0.5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contactSection .getInputBtn {
+  background: white;
+  font-weight: bold;
+  font-size: 1em;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.contactSection .mapHeading {
+  text-align: center;
+  color: white;
+}
+
+.contactSection iframe {
+  border-radius: 0.5em;
+  width: 100%;
+  height: 350px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,244 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;600&display=swap');
+
+:root {
+
+    --primary-color: #007AF3;
+}
+
+body {
+
+    background: #FFF;
+    margin: 0; // reset the margin
+    font-family: 'Jost', sans-serif;
+    
+}
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+
+    padding: 1.2em;
+}
+
+
+.navBar {
+
+    background: var(--primary-color);
+    padding: 1em;
+
+    .logo {
+
+        margin: 1em;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        font-size: 1.2em;
+
+        span {
+
+            color: black;
+        }
+    }
+
+    nav {
+
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .menuOpenButtonInNav {
+
+        cursor: pointer;
+        width: 10%;
+    }
+}
+
+.hero {
+    text-align: center;
+
+    .mainHeadingInHero {
+
+        font-size: 3em;
+        letter-spacing: 0.0em;
+        line-height: 1.3em;
+        font-weight: bold;
+    }
+
+    .subHeadingInHero {
+
+        font-size: 1.5em;
+
+        span {
+            
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+    }
+
+    .buttonsInHero {
+
+        padding: 1em;
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+
+        .Button1ForHero1 {
+
+            background: var(--primary-color);
+            color: #FFF;
+            text-decoration: none;
+            padding: 0.5em 1.5em;
+            border-radius: 6em;
+            font-weight: bold;
+        }
+        
+    }
+
+    img {
+
+        // margin: 0.5em;
+        margin: 2em 0.5em 2em 0.5em;
+        width: 80%;
+    }
+}
+
+.featuresSection {
+
+    background: var(--primary-color);
+
+    .container {
+
+        text-align: center;
+        padding-bottom:1.5em;
+        color: white;
+        
+
+        li {
+            margin-left: 2em;
+            font-weight: bold;
+            color: white;
+            line-height: 3em;
+            position: relative;
+
+            &:before {
+
+                left: 0em;
+                top: 1em;
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background-image: url('../images/check.png');
+                background-size: contain;
+            }
+        }
+
+
+        img {
+
+            display: none;
+        }
+
+    }
+}
+
+.testimonials {
+
+    margin-bottom: -1em;
+    .container {
+
+        text-align: center;
+
+        li {
+
+            line-height: 1em;
+            margin: 6em 1em 5em 1em;
+            background: rgb(236, 231, 231);
+            border-radius: 0.5em;
+            text-shadow: 5em solid black;
+            padding: 1.5em;
+
+            img {
+
+                margin-top: -5em;
+                width: 5em;
+                height: 5em;
+                border: 0.3em solid rgb(214, 211, 211);
+                border-radius: 20em;
+            }
+
+            p {
+                font-weight: bold;
+                font-size: 100%;
+            }
+
+            cite {
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+.contactSection {
+
+    background: var(--primary-color);
+    color: white;
+    padding: 1em 0.5em 2em 0.5em;
+
+
+    .container {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .contactHeading {
+        text-align: center;
+    }
+
+    label {
+        font-weight: bold;
+        margin-left: 0.5em;
+        // padding: 0.5em;
+    }
+
+    input, textarea {
+
+        width: 100%;
+        margin-top: 1em;
+        margin-bottom: 2.3em;
+        padding: 1em;
+        border: none;
+        border-radius: 0.5em;
+        box-sizing: border-box;
+    }
+
+    .getInputBtn {
+        
+        background: white;
+        font-weight: bold;
+        font-size: 1em;
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    .mapHeading {
+        text-align: center;
+        color: white;
+    }
+
+    iframe {
+
+        border-radius: 0.5em;
+        width: 100%;
+        height: 350px;
+    }
+}
